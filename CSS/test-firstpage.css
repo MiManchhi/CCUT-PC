@@ -1,0 +1,157 @@
+.head-top {
+    display: flex;
+    width: auto;
+    height: 80px;
+    background-color: #8D2724;
+}
+li {
+    list-style: none;
+}
+.logo {
+    width: 193px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.logo a {
+    display: block;
+    height: 40px;
+    width: 194px;
+}
+.daohang {
+    background-color: #fff;
+    display: block;
+    margin-left: 350px;
+    flex: 1;
+    height: 80px;
+}
+.daohang-right-top {
+    display: flex;
+    background-color: #8D2724;
+    height: 40px;
+    width: auto;
+    justify-content: flex-end;
+}
+.daohang-right-top ul {
+    display: flex;
+    width: auto;
+    text-align: right;
+}
+.daohang-right-top li {
+    display: block;
+    margin-top: 10px;
+    list-style: none;
+    flex-wrap: 1;
+}
+.daohang-right-top li a {
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+.iconfont {
+    color: white;
+    font-size: 16px;
+}
+.daohang-right-bottom {
+    background-color: #8D2724;
+    height: 40px;
+    width: auto;
+}
+.daohang-right-bottom ul {
+    display: flex;
+}
+.daohang-right-bottom li{
+    display: block;
+    margin-right: 15px;
+    height: 40px;
+    flex-grow: 1;
+    list-style: none;
+}
+.daohang-right-bottom li a {
+    display: block;
+    height: 37px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.daohang-right-bottom li a:hover {
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+.banner {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 430px;
+    background-color: bisque;
+}
+.banner ul {
+    display: flex;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.banner img {
+    width: 1400px;
+    height: 430px;
+}
+.jiantou-left {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 30px;
+    height: 25px;
+    background-color: hsl(60, 78%, 12%,60%);
+    border-radius: 0px 15px 15px 0px;
+}
+.jiantou-left div,.jiantou-right div {
+    text-align: center;
+    vertical-align: middle;
+}
+.iconfont {
+    color: yellow;
+    font-size: 20px;
+}
+.jiantou-right {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    width: 30px;
+    height: 25px;
+    background-color: hsl(60, 78%, 12%,60%);
+    border-radius: 15px 0px 0px 15px;
+}
+.banner:hover .jiantou-left,.banner:hover .jiantou-right {
+    display: block;
+}
+.banner .jiantou-left,.banner .jiantou-right {
+    cursor: pointer;
+}
+.circle {
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+.circle ol {
+    display: flex;
+}
+.circle li {
+    margin-left: 5px;
+    background-color: wheat;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.banner .circle ol .active {
+    background-color: yellow;
+}

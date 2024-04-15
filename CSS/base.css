@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;    
+}
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 114px;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 46, 54,1),
+        rgba(255,255,255,0)
+    );
+    z-index: 2;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}   
+.nav1 {
+    height: 55px;
+    width: 800px;
+    text-align: right;
+    margin-left: 150px;
+    padding-top: 15px;
+}
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav1 li {
+    display: block;
+    width: 50px;
+}
+.nav1 a {
+    font-size: 10px;
+    color: #fff;
+}
+.nav2 a {
+    font-size: 18px;
+    color: #fff;
+}
+.nav li {
+    display: block;
+    text-align: center;
+}
+.nav2 {
+    height: 59px;
+    width: 800px;
+    margin-left: 150px;
+}
+.nav2 li {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    justify-content: center;
+}
+.nav .iconfont {
+    color: #fff;
+}
+.nav2 li:hover a{
+    color: rgb(226, 202, 91);
+}
+.nav2 span {
+    display: block;
+    transition: transform 0.3s ease; 
+}
+.xialamenu1 {
+    position: fixed;
+    background-color: #fff;
+    border-top: 5px solid rgb(238, 150, 64);
+    text-align: center;
+    width: 90px;
+    top: 88px;
+    left: 560px;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.xialamenu2 {
+    position: fixed;
+    background-color: #fff;
+    border-top: 5px solid rgb(238, 150, 64);
+    text-align: center;
+    width: 90px;
+    top: 88px;
+    left: 860px;
+    z-index: 2;
+    display: none;
+}
+.xialamenu3 {
+    position: fixed;
+    background-color: #fff;
+    border-top: 5px solid rgb(238, 150, 64);
+    text-align: center;
+    width: 90px;
+    top: 88px;
+    left: 960px;
+    z-index: 2;
+    display: none;
+}
+.xialamenu4 {
+    position: fixed;
+    background-color: #fff;
+    border-top: 5px solid rgb(238, 150, 64);
+    text-align: center;
+    width: 90px;
+    top: 88px;
+    left: 1060px;
+    z-index: 2;
+    display: none;
+}
+.xialamenu1 a,.xialamenu2 a,.xialamenu3 a,.xialamenu4 a {
+    color: rgb(97, 0, 171);
+    display: block;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+}
+.xialamenu1 a:hover,.xialamenu2 a:hover,.xialamenu3 a:hover,.xialamenu4 a:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
