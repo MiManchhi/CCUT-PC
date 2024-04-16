@@ -1,3 +1,4 @@
+    //---------------------------下拉菜单-------------------
     //获取标签
     const li1 = document.querySelector('.dropmenu1')
     const li2 = document.querySelector('.dropmenu2')
@@ -7,9 +8,9 @@
     const menu2 = document.querySelector('.xialamenu2')
     const menu3 = document.querySelector('.xialamenu3')
     const menu4 = document.querySelector('.xialamenu4')
-    console.log(li1.classList)
-    console.log(menu1.classList)
-    console.log(li1.style.height)
+    // console.log(li1.classList)
+    // console.log(menu1.classList)
+    // console.log(li1.style.height)
     //鼠标是否在下拉菜单上
      let isHoveringMenu1 = false
      let isHoveringMenu2 = false
@@ -113,3 +114,46 @@
         isHoveringMenu4 = false
         menu4.style.display = 'none'
     })
+
+    //------------------------轮播背景图----------------------
+    // let arrBgi = [{url:'../Assets/Images/bgi_01.jpg'},
+    // {url:'../Assets/Images/bgi_02.jpg'},
+    // {url:'../Assets/Images/bgi_03.jpg'},
+    // {url:'../Assets/Images/bgi_04.jpg'},
+    // {url:'../Assets/Images/bgi_05.jpg'}]
+    // let arrBgi2 = [{url:'url(../Assets/Images/bgi_01.jpg)'},
+    // {url:'url(../Assets/Images/bgi_02.jpg)'},
+    // {url:'url(../Assets/Images/bgi_03.jpg)'},
+    // {url:'url(../Assets/Images/bgi_04.jpg)'},
+    // {url:'url(../Assets/Images/bgi_05.jpg)'}]
+    // const newspic = document.querySelector('.newspic')
+    // const img = document.querySelector('.newspic img')
+    // let i = 0
+    // function switchBackground() {
+    //     i++
+    //     setTimeout(() => {
+    //     if(i+2 >= arrBgi.length-1)
+    //     {
+    //         i = 0;
+    //     }
+    //     img.style.opacity = 0;
+    //     img.src = arrBgi[i+1].url
+    //     console.log(i)
+    //     console.log(arrBgi[i+1].url)
+    //     newspic.style.backgroundImage = arrBgi2[i+2].url
+    //     }, 500);
+    //     setTimeout(() => {
+    //         i++
+    //     }, 5000);
+    //     setTimeout(() => {
+    //         if(i+2 >= arrBgi.length-1)
+    //         {
+    //             i = 0;
+    //         }
+    //         img.style.opacity = 1;
+    //         img.src = arrBgi[i+1].url
+    //         newspic.style.backgroundImage = arrBgi2[i+2].url
+    //         }, 500);
+    // }
+    // setInterval(switchBackground,5000)
+    // //以上代码有bug
