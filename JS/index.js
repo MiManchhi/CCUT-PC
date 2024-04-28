@@ -70,7 +70,22 @@
             xialamenu4.classList.remove('show');
         }, 500);
     });
-
+// //轮播图箭头
+// const newspic = document.querySelector('.newspic')
+// const newspic_pre = document.querySelector('.newspic_pre')
+// const newspic_next = document.querySelector('.newspic_next')
+// console.log(newspic_pre)
+// newspic.addEventListener('mouseenter',function(){
+//     console.log('鼠标进入')
+//     console.log('newspic_pre')
+//     newspic_pre.style.display = 'block'
+//     newspic_next.style.display = 'block'
+// })
+// newspic.addEventListener('mouseleave',function(){
+//     console.log('鼠标离开')
+//     newspic_pre.style.display = 'none'
+//     newspic_next.style.display = 'none'
+// })
     //------------------------轮播背景图----------------------
     // let arrBgi = [{url:'../Assets/Images/bgi_01.jpg'},
     // {url:'../Assets/Images/bgi_02.jpg'},

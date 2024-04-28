@@ -4,6 +4,13 @@
     box-sizing: border-box;
     list-style: none;
 }
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
 a {
     text-decoration: none;
 }
@@ -152,6 +159,27 @@ a {
 .xialamenu1 a:hover,.xialamenu2 a:hover,.xialamenu3 a:hover,.xialamenu4 a:hover {
     background-color: rgb(237, 237, 237);
 }
+.menu {
+    position: relative;
+    flex: 1;
+    margin-right: 30px;
+}
+.menu div {
+    position: absolute;
+    width: 88px;
+    height: 80px;
+    right: 0;
+    top: 18px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu div:hover {
+    font-size: 80px;
+}
+
 
 
 

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4501011 */
-  src: url('iconfont.woff2?t=1712666054548') format('woff2'),
-       url('iconfont.woff?t=1712666054548') format('woff'),
-       url('iconfont.ttf?t=1712666054548') format('truetype');
+  src: url('iconfont.woff2?t=1713950469399') format('woff2'),
+       url('iconfont.woff?t=1713950469399') format('woff'),
+       url('iconfont.ttf?t=1713950469399') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,34 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-denglu_QQdenglu:before {
+  content: "\e635";
+}
+
+.icon-weibodenglu:before {
+  content: "\e62a";
+}
+
+.icon-denglu-weixindenglu:before {
+  content: "\e629";
+}
+
+.icon-github:before {
+  content: "\e6a4";
+}
+
+.icon-caidan:before {
+  content: "\eaf1";
+}
+
+.icon-xiayiye:before {
+  content: "\e649";
+}
+
+.icon-xiayiye1:before {
+  content: "\e604";
 }
 
 .icon-map:before {

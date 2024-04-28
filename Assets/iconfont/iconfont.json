@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "6554807",
+      "name": "登录_QQ登录",
+      "font_class": "denglu_QQdenglu",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "12767301",
+      "name": "微博登录",
+      "font_class": "weibodenglu",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "13769356",
+      "name": "登录-微信登录",
+      "font_class": "denglu-weixindenglu",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "32193853",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "5387521",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "eaf1",
+      "unicode_decimal": 60145
+    },
+    {
+      "icon_id": "10253595",
+      "name": "下一页",
+      "font_class": "xiayiye",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "28178045",
+      "name": "下一页",
+      "font_class": "xiayiye1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
       "icon_id": "15838499",
       "name": "map",
       "font_class": "map",
