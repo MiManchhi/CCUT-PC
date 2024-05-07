@@ -91,10 +91,10 @@ h1 {
     font-weight: 700 !important;
 }
 .content .right li:hover {
-    background-color: rgb(123, 37, 36);
+    background-color: rgb(50, 58, 212);
 }
 .active {
-    background-color: rgb(123, 37, 36);
+    background-color: rgb(50, 58, 212);
 }
 .active1 {
     color: #fff !important;

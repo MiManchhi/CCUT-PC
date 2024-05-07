@@ -237,3 +237,81 @@
     margin: auto;
     border-bottom: 2px solid skyblue;
 }
+.more_container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 30vw;
+    margin: auto;
+} 
+.more_container > div {
+    position: relative;
+    width: 24%;
+    height: 98%;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.more_container > div > p {
+    display: block;
+    width: 96%;
+    height: 52px;
+    margin: 5px auto;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    overflow: hidden;
+}
+.more_container > div > p a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+}
+.more_container > div > p:hover a {
+    color: rgb(50, 58, 212);
+}
+.more_title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+.more_title a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+}
+.more_title .iconfont {
+    font-size: 30px;
+    color: #000000;
+}
+.cover .iconfont {
+    font-size: 30px;
+    color: #fff;
+}
+.cover {
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+.cover a {
+    position: absolute;
+    bottom: -80px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(50, 58, 212);
+    transition: all 0.5s;
+}
+.more_information:hover .cover a,.more_news:hover .cover a,.more_medium:hover .cover a,.more_dongtai:hover .cover a {
+    bottom: 0;
+}
