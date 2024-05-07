@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    margin: 10px;
+}
+h1 {
+    color: blueviolet;
+    text-align: center;
+    width: auto;
+}
+h2 {
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+.whole {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    margin: 50px auto;
+    background-color: rgb(238, 236, 232);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.information {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.head {
+    border-top: #b52b2b solid 2px;
+}
+img {
+    position: absolute;
+    top: 50px;
+    right: 110px;
+    width: 120px;
+    height: 120px;
+}
