@@ -1,0 +1,118 @@
+.bgi {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../Assets/Images/jianjie-banner.jpg);
+    background-size: cover;
+}
+.title {
+    position: absolute;
+    left: 60px;
+    top: 275px;
+    margin-left: 50px;
+}
+.location {
+    position: absolute;
+    left: 0;
+    top: 335px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    width: 400px;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(50, 58, 212);
+}
+h1 {
+    color: #fff;
+}
+.contain {
+    position: relative;
+    width: 95vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+}
+.content1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-image: url(../Assets/Images/bgi_03.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    width: 45%;
+    height: 80%;
+    background-color: skyblue;
+}
+.content2 a {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.content2 a .org {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.content2 a:nth-child(1) {
+    background-color: rgb(175, 40, 15);
+}
+.content2 a:nth-child(1) p {
+    color: #fff;
+}
+.content2 a:nth-child(2) {
+    background-color: rgb(244, 239, 233);
+}
+.content2 a:nth-child(3) {
+    background-image: url(../Assets/Images/bgi_02.jpg);
+    background-size: cover;
+}
+.content2 a:nth-child(4) {
+    background-color: rgb(255, 255, 255);
+}
+.content2 a:nth-child(2) p,.content2 a:nth-child(4) p {
+    color: black;
+}
+.img1 {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #fff;
+}
+.img2,.img3 {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed rgb(175, 40, 15);
+}
+.org img {
+    transition: all 0.8s;
+}
+.org:hover img {
+    transform: rotate3d(0, 1, 0, 360deg);
+}

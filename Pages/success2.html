@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .success-page {
+            width: 500px;
+            height: 550px;
+            margin: 50px auto;
+            border: 2px solid rgb(79, 129, 189);
+        }
+        .container {
+            height: 98%;
+            width: 98%;
+            margin: 5px;
+            padding: 8px;
+            border: 8px solid rgb(238, 238, 238);
+        }
+        .container h1 {
+            color: red;
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        .registration-info div {
+            display: flex;
+            margin: 8px;
+        }
+        .registration-info div h3 {
+            color: rgb(70, 100, 225);
+            height: 25px;
+            line-height: 25px;
+        }
+        .registration-info div p {
+            height: 25px;
+            line-height: 25px;
+        }
+        .introductionp {
+            display: block;
+            width: 100%px;
+            height: 180px;
+            margin: 8px;
+        }
+        .introductionp span {
+            color: rgb(70, 100, 225);
+            font-size: 19px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-page">
+        <div class="container">
+            <h1>注册成功</h1>
+            <div class="registration-info">
+                <div><h3>用户名：</h3><p class="usernamep"></p></div>
+                <div><h3>密码：</h3><p class="passwordp"></p></div>
+                <div><h3>性别：</h3><p class="genderp"></p></div>
+                <div><h3>兴趣：</h3><p class="habitp"></p></div>
+                <div><h3>所在学院：</h3><p class="schoolp"></p></div>
+                <div><h3>联系电话：</h3><p class="phonep"></p></div>
+                <div><h3>邮箱：</h3><p class="emailp"></p></div>
+                <div><h3>入学时间：</h3><p class="datep"></p></div>
+                <p class="introductionp"><span>自我介绍：</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const usernamep = document.querySelector('.usernamep')
+        const passwordp = document.querySelector('.passwordp')
+        const genderp = document.querySelector('.genderp')
+        const habitp = document.querySelector('.habitp')
+        const schoolp = document.querySelector('.schoolp')
+        const phonep = document.querySelector('.phonep')
+        const emailp = document.querySelector('.emailp')
+        const datep = document.querySelector('.datep')
+        const introductionp = document.querySelector('.introductionp')
+        // 从本地存储中获取用户信息
+        const username = localStorage.getItem("username");
+        const email = localStorage.getItem("email");
+        const password = localStorage.getItem("password");
+        const gender = localStorage.getItem("gender");
+        const habits = localStorage.getItem("habits");
+        const college = localStorage.getItem("college");
+        const phoneNumber = localStorage.getItem("phoneNumber");
+        const date = localStorage.getItem("date");
+        const introduction = localStorage.getItem("introduction");
+        
+        //测试
+        console.log(username)
+        console.log(password)
+        console.log(gender)
+        console.log(habits)
+        console.log(college)
+        console.log(phoneNumber)
+        console.log(email)
+        console.log(date)
+        console.log(introduction)
+        // 将注册信息显示在页面上
+        usernamep.innerHTML = `${username}`
+        passwordp.innerHTML = `${password}`
+        genderp.innerHTML = `${gender}`
+        habitp.innerHTML = `${habits}`
+        schoolp.innerHTML = `${college}`
+        phonep.innerHTML = `${phoneNumber}`
+        emailp.innerHTML = `${email}`
+        datep.innerHTML = `${date}`
+        introductionp.innerHTML = `<span>自我介绍：</span>${introduction}`
+
+        // 清除本地存储中的用户信息
+        localStorage.removeItem("username");
+        lStorage.removeItem("email");
+        localStorage.removeItem("password");
+        localStorage.removeItem("gender");
+        localStorage.removeItem("habits");
+        localStorage.removeItem("college");
+        localStorage.removeItem("phoneNumber");
+        localStorage.removeItem("date");
+        localStorage.removeItem("introduction");
+    </script>
+</body>
+</html>

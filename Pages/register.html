@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .page {
+            display: flex;
+            justify-content: flex-start;
+            width: 700px;
+            margin: 30px auto;
+            border: 5px solid pink;
+            box-shadow: 2px 5px 10px 1px skyblue;
+        }
+        h3 {
+            color: rgb(255, 207, 29);
+            padding-left: 8px;
+            font-weight: 500;
+        }
+        h4 {
+            color: rgb(163, 163, 163);
+            padding-left: 8px;
+            font-weight: 500;
+        }
+        .page .left {
+            width: 150px;
+            padding-top: 10px;
+        }
+        .page .right {
+            width: 550px;
+        }
+        .page .right div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 15px 15px 0 0;
+        }
+        div p {
+            display: block;
+            text-align: end;
+            width: 80px;
+            height: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        label {
+            display: flex;
+            align-items: center;
+        }
+        .right div > input {
+            height: 25px;
+            width: 200px;
+            padding-left: 5px;
+        }
+        .iconfont {
+            color: blue;
+        }
+        .button {
+            padding-left: 100px;
+        }
+        .button :nth-child(1) {
+            background-color:rgb(255, 208, 38);
+        }
+        .button :nth-child(2),.button :nth-child(3) {
+            background-color:rgb(151, 195, 220);
+        }
+        button {
+            width: 60px;
+            height: 30px;
+            margin-right: 10px;
+            border: 0;
+        }
+        .bottom {
+            justify-content: flex-end !important;
+            font-size: 14px;
+        }
+        .bottom p {
+            margin: 0;
+            padding: 0;
+        }
+        .bottom a {
+            color: green;
+        }
+        .identifyingCode input {
+            width: 100px !important;
+        }
+        .identifyingCode img {
+            height: 25px;
+            margin-left: 5px;
+        }
+        .gender img {
+            width: 12px;
+            height: 12px;
+        }
+        .gender label {
+            margin-right: 8px;
+        }
+        .grade label {
+            margin-right: 8px;
+        }
+        span {
+            font-size: 10px;
+            color: black;
+            display: none;
+        }
+        input {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="./success2.html" name="form">
+        <div class="page">
+            <div class="left">
+                <h3>新用户注册</h3>
+                <h4>USER REGISTER</h4>
+            </div>
+            <div class="right">
+                <div>
+                    <p>用户名</p>
+                    <input type="text" placeholder="请输入用户名" name="username">
+                    <span class="usernameError">用户名不能为空,必须以'2024'开头！</span>
+                </div>
+                <div>
+                    <p>密码</p>
+                    <input type="password" placeholder="请输入密码" name="password">
+                    <span class="passwordError">密码不能为空且必须是6-20位！</span>
+                </div>
+                <div>
+                    <p>确认密码</p>
+                    <input type="password" name="verifypasswd" placeholder="请输入确认密码">
+                    <span class="verifyError">不为空，且与密码相同！</span>
+                </div>
+                <div class="gender">
+                    <p>性别</p>
+                    <label><input type="radio" name="gender" value="男"><img src="../Assets/Images/man.jpg" alt="">男
+                    </label>
+                    <label><input type="radio" name="gender"  value="女"><img src="../Assets/Images/woman.jpg" alt="">女</label>
+                </div>
+                <div class="habit">
+                    <p>兴趣爱好</p>
+                    <label><input type="checkbox" value="音乐">音乐</label>
+                    <label><input type="checkbox" value="体育">体育</label>
+                    <label><input type="checkbox" value="书籍">书籍</label>
+                    <label><input type="checkbox" value="电影">电影</label>
+                </div>
+                <div>
+                    <p>所在学院</p>
+                    <select>
+                        <option>--请选择--</option>
+                        <option>机电工程学院</option>
+                        <option>材料科学与工程学院</option>
+                        <option selected>计算机科学与工程学院</option>
+                        <option>数学与统计学院</option>
+                        <option>马克思主义学院</option>
+                    </select>
+                </div>
+                <div>
+                    <p>联系电话</p>
+                    <input type="text" name="phoneNumber">
+                    <span class="phoneNumberError">11位数字且第一位不能是0！</span>
+                </div>
+                <div>
+                    <p>邮箱</p>
+                    <input type="email" name="email">
+                    <span class="emailError">格式错误！必须包含@!</span>
+                </div>
+                <div>
+                    <p>入学时间</p>
+                    <input type="date" name="date">
+                    <span class="dateError">必须在2020年至2023年之间！</span>
+                </div>
+                <div>
+                    <p>自我介绍</p>
+                    <textarea cols="45" rows="5"></textarea>
+                </div>
+                <div class="identifyingCode">
+                    <p>验证码</p>
+                    <input type="text">
+                    <img src="../Assets/Images/验证码.png">
+                </div>
+                <div class="button">
+                    <button type="submit">注册</button>
+                    <button type="reset">重填</button>
+                    <button type="button">取消</button>
+                </div>
+                <div class="bottom">
+                    <p>已有帐号？</p>
+                    <a href="">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        const form = document.querySelector('[name="form"]');
+        const usernameInput = document.querySelector('[name="username"]');
+        const passwordInput = document.querySelector('[name="password"]');
+        const verifypasswd = document.querySelector('[name="verifypasswd"]')
+        const emailInput = document.querySelector('[name="email"]');
+        const phoneNumberInput = document.querySelector('[name="phoneNumber"]');
+        const DateInput = document.querySelector('[name="date"]');
+
+        usernameInput.addEventListener('change', validUsername);
+        passwordInput.addEventListener('change', validPassword);
+        verifypasswd.addEventListener('change',confirmpasswd);
+        emailInput.addEventListener('change', validEmail);
+        phoneNumberInput.addEventListener('change', validPhoneNumber);
+        DateInput.addEventListener('change', validDate);
+
+        function validUsername() {
+            const usernameError = document.querySelector('.usernameError');
+            if (usernameInput.value === "" || !usernameInput.value.startsWith("2024")) {
+                usernameError.style.display = 'block';
+                return false
+            } else {
+                usernameError.style.display = 'none';
+                return true
+            }
+        }
+
+        function validPassword() {
+            const passwordError = document.querySelector('.passwordError');
+            if (passwordInput.value === "" || passwordInput.value.length < 6 || passwordInput.value.length > 20) {
+                passwordError.style.display = 'block';
+                return false
+            } else {
+                passwordError.style.display = 'none';
+                return true
+            }
+        }
+        function confirmpasswd() {
+            const verifyError = document.querySelector('.verifyError');
+            if(passwordInput.value != verifypasswd.value || verifypasswd.value === "")
+            {
+                verifyError.style.display = 'block';
+                return false
+            } else {
+                verifyError.style.display = 'none';
+                return true
+            }
+        }
+        function validEmail() {
+            const emailError = document.querySelector('.emailError');
+            if (!emailInput.value.includes("@")) {
+                emailError.style.display = 'block';
+                return false
+            } else {
+                emailError.style.display = 'none';
+                return true
+            }
+        }
+
+        function validPhoneNumber() {
+            const phoneNumberError = document.querySelector('.phoneNumberError');
+            if (phoneNumberInput.value.length !== 11 || phoneNumberInput.value[0] === '0') {
+                phoneNumberError.style.display = 'block';
+                return false
+            } else {
+                phoneNumberError.style.display = 'none';
+                return true
+            }
+        }
+
+        function validDate() {
+            const DateError = document.querySelector('.dateError');
+            const Year = parseInt(DateInput.value.split("-")[0]);
+            if (Year < 2020 || Year > 2023) {
+                DateError.style.display = 'block';
+                return false
+            } else {
+                DateError.style.display = 'none';
+                return true
+            }
+        }
+
+        form.addEventListener('submit', function(event) {
+            if(!validUsername() || !validPassword() || !validEmail() || !validPhoneNumber()
+        || !validDate() || !confirmpasswd())
+            {
+                event.preventDefault();
+            }
+            else {
+                const gender = document.querySelector('input[name="gender"]:checked').value;
+                const habitsInputs = document.querySelectorAll('.habit input[type="checkbox"]:checked');
+                const habitsArray = Array.from(habitsInputs).map(input => input.value);
+                const habits = habitsArray.join(',');
+                const college = document.querySelector('select').value;
+                const introduction = document.querySelector('textarea').value;
+                // 测试
+                console.log(usernameInput.value)
+                console.log(passwordInput.value)
+                console.log(emailInput.value)
+                console.log(phoneNumberInput.value)
+                console.log(DateInput.value)
+                console.log(gender)
+                console.log(habits)
+                console.log(college)
+                console.log(introduction)
+                // 存储到本地存储中
+                localStorage.setItem("username", usernameInput.value);
+                localStorage.setItem("email", emailInput.value);
+                localStorage.setItem("password", passwordInput.value);
+                localStorage.setItem("phoneNumber", phoneNumberInput.value);
+                localStorage.setItem("date", DateInput.value);
+                localStorage.setItem("gender", gender);
+                localStorage.setItem("habits", habits);
+                localStorage.setItem("college", college);
+                localStorage.setItem("introduction", introduction);
+            }
+        });
+    </script>
+</body> 
+</html>

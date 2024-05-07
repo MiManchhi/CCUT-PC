@@ -39,7 +39,7 @@ a {
 }   
 .nav1 {
     height: 55px;
-    width: 800px;
+    width: 880px;
     text-align: right;
     margin-left: 150px;
     padding-top: 15px;
@@ -66,7 +66,7 @@ a {
 }
 .nav2 {
     height: 59px;
-    width: 800px;
+    width: 880px;
     margin-left: 150px;
 }
 .nav2 .li {
@@ -94,7 +94,7 @@ a {
     text-align: center;
     width: 90px;
     top: 88px;
-    left: 560px;
+    left: 642px;
     z-index: 2;
     display: none !important;
     opacity: 0;
@@ -112,7 +112,7 @@ a {
     text-align: center;
     width: 90px;
     top: 88px;
-    left: 860px;
+    left: 942px;
     z-index: 2;
     display: none !important;
     opacity: 0;
@@ -127,7 +127,7 @@ a {
     text-align: center;
     width: 90px;
     top: 88px;
-    left: 960px;
+    left: 1042px;
     z-index: 2;
     display: none !important;
     opacity: 0;
@@ -142,7 +142,7 @@ a {
     text-align: center;
     width: 90px;
     top: 88px;
-    left: 1060px;
+    left: 1142px;
     z-index: 2;
     display: none !important;
     opacity: 0;
@@ -233,7 +233,7 @@ a {
     position: absolute;
     height: 200px;
     width: 100%;
-    background-color: rgb(168, 41, 35);
+    background-color: rgb(50, 58, 212);
     bottom: 0;
     z-index: 3;
     margin-left: 50px;

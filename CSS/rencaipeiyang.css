@@ -24,8 +24,178 @@
     width: 400px;
     height: 60px;
     border-radius: 0 30px 30px 0;
-    background-color: rgb(123, 37, 36);
+    background-color: rgb(50, 58, 212);
 }
 h1 {
     color: #fff;
+}
+.benkesheng {
+    display: flex;
+    width: 95vw;
+    height: 45vh;
+    margin: 40px auto;
+}
+.benkesheng div:first-child {
+    width: 180%;
+    height: 100%;
+    overflow: hidden;
+}
+.benkesheng div:first-child:hover img {
+    transform: scale(1.1);
+}
+.benkesheng div:last-child {
+    padding: 0 40px;
+}
+.benkesheng img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+.benkesheng h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.benkesheng p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-indent: 2rem;
+    color: rgb(69, 56, 90);
+    font-size: 14px
+}
+.benkesheng a {
+    display: block;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: pink;
+}
+.yanjiusheng {
+    display: flex;
+    width: 95vw;
+    height: 45vh;
+    margin: 40px auto;
+}
+.yanjiusheng div:last-child {
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+}
+.yanjiusheng div:last-child:hover img {
+    transform: scale(1.1);
+}
+.yanjiusheng div:first-child {
+    padding: 0 40px;
+}
+.yanjiusheng img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+.yanjiusheng h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.yanjiusheng p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-indent: 2rem;
+    color: rgb(69, 56, 90);
+    font-size: 14px
+}
+.yanjiusheng a {
+    display: block;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: pink;
+}
+.liuxuesheng {
+    width: 95vw;
+    height: 105vh;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+.liuxuesheng h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.liuxuesheng p {
+    text-align: left;
+    margin-top: 30px;
+    text-indent: 2rem;
+    color: rgb(69, 56, 90);
+    font-size: 14px
+}
+.liuxuesheng img {
+    margin-top: 40px;
+    width: 80vw;
+    height: 68vh;
+}
+.liuxuesheng a {
+    display: block;
+    width: 130px;
+    height: 50px;
+    margin: auto;
+    margin-top: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: skyblue;
+}
+.jixvjiaoyv {
+    display: flex;
+    width: 95vw;
+    height: 45vh;
+    margin: 40px auto;
+}
+.jixvjiaoyv div:last-child {
+    width: 150%;
+    height: 100%;
+    overflow: hidden;
+}
+.jixvjiaoyv div:last-child:hover img {
+    transform: scale(1.1);
+}
+.jixvjiaoyv div:first-child {
+    padding: 0 40px;
+}
+.jixvjiaoyv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+.jixvjiaoyv h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.jixvjiaoyv p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-indent: 2rem;
+    color: rgb(69, 56, 90);
+    font-size: 14px
+}
+.jixvjiaoyv a {
+    display: block;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: pink;
 }

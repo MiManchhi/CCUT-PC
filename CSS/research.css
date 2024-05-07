@@ -1,0 +1,239 @@
+.bgi {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../Assets/Images/jianjie-banner.jpg);
+    background-size: cover;
+}
+.title {
+    position: absolute;
+    left: 60px;
+    top: 275px;
+    margin-left: 50px;
+}
+.location {
+    position: absolute;
+    left: 0;
+    top: 335px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    width: 400px;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(50, 58, 212);
+}
+h1 {
+    color: #fff;
+}
+.kexueyanjiuchu-container {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 45px;
+}
+.kexueyanjiuchu-container .bgi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url(../Assets/Images/bgi_03.jpg);
+    background-size: cover;
+}
+.kexueyanjiuchu-container .bgc {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    bottom: 20px;
+    right: 0;
+    background-color: rgb(168, 27, 0);
+}
+.kexueyanjiuchu-container .bgc a {
+    position: absolute;
+    bottom: 12px;
+    right: 120px;
+    color: #fff;
+}
+.kexueyanjiuchu-container .content {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    top: 50px;
+    right: 40px;
+    padding: 30px;
+    padding-top: 60px;
+    background-color: #fff;
+    background-image: url(../Assets/Images/yj1bg.jpg);
+    background-size: contain;
+}
+.kexueyanjiuchu-container .content h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.kexueyanjiuchu-container .content p {
+    display: block;
+    width: 100%;
+    height: 340px;
+    margin-top: 25px;
+    text-indent: 2rem;
+    color: rgb(55, 55, 55);
+    line-height: 25px;
+}
+.keyanjigou-container {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+.keyanjigou-container h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.keyanjigou-container .ky_bgi {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85%;
+    background-image: url(../Assets/Images/yj2.jpg);
+    background-size: cover;
+}
+.keyanjigou-container .ky_bgi p {
+    position: absolute;
+    top: 125px;
+    left: 50px;
+    display: block;
+    width: 550px;
+    height: 200px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 2rem;
+}
+.keyanjigou-container .ky_bgi a {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+.xueshuqikan-container {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+.xueshuqikan-container h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.qikan-container {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+.qikan-container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qikan-container .book_1,.qikan-container .book_2,.qikan-container .book_3,.qikan-container .book_4,.qikan-container .book_5 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+    
+}
+.qikan-container .book_1 {
+    left: 30px;
+    width: 14%;
+    height: 60%;
+}
+.qikan-container .book_1 img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+}
+.qikan-container .book_1:hover img {
+    width: 100%;
+    height: 100%;
+}
+.qikan-container .book_2 {
+    left: 300px;
+    width: 16%;
+    height: 65%;
+}
+.qikan-container .book_2 img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+}
+.qikan-container .book_2:hover img {
+    width: 100%;
+    height: 100%;
+}
+.qikan-container .book_3 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 18%;
+    height: 70%;
+}
+.qikan-container .book_3 img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+}
+.qikan-container .book_3:hover img {
+    width: 100%;
+    height: 100%;
+}
+.qikan-container .book_4 {
+    right: 300px;
+    width: 16%;
+    height: 65%;
+}
+.qikan-container .book_4 img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+}
+.qikan-container .book_4:hover img {
+    width: 100%;
+    height: 100%;
+}
+.qikan-container .book_5 {
+    right: 30px;
+    width: 14%;
+    height: 60%;
+}
+.qikan-container .book_5 img {
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s;
+}
+.qikan-container .book_5:hover img {
+    width: 100%;
+    height: 100%;
+}
