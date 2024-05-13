@@ -70,61 +70,90 @@
             xialamenu4.classList.remove('show');
         }, 500);
     });
-// //轮播图箭头
-// const newspic = document.querySelector('.newspic')
-// const newspic_pre = document.querySelector('.newspic_pre')
-// const newspic_next = document.querySelector('.newspic_next')
-// console.log(newspic_pre)
-// newspic.addEventListener('mouseenter',function(){
-//     console.log('鼠标进入')
-//     console.log('newspic_pre')
-//     newspic_pre.style.display = 'block'
-//     newspic_next.style.display = 'block'
-// })
-// newspic.addEventListener('mouseleave',function(){
-//     console.log('鼠标离开')
-//     newspic_pre.style.display = 'none'
-//     newspic_next.style.display = 'none'
-// })
-    //------------------------轮播背景图----------------------
-    // let arrBgi = [{url:'../Assets/Images/bgi_01.jpg'},
-    // {url:'../Assets/Images/bgi_02.jpg'},
-    // {url:'../Assets/Images/bgi_03.jpg'},
-    // {url:'../Assets/Images/bgi_04.jpg'},
-    // {url:'../Assets/Images/bgi_05.jpg'}]
-    // let arrBgi2 = [{url:'url(../Assets/Images/bgi_01.jpg)'},
-    // {url:'url(../Assets/Images/bgi_02.jpg)'},
-    // {url:'url(../Assets/Images/bgi_03.jpg)'},
-    // {url:'url(../Assets/Images/bgi_04.jpg)'},
-    // {url:'url(../Assets/Images/bgi_05.jpg)'}]
-    // const newspic = document.querySelector('.newspic')
-    // const img = document.querySelector('.newspic img')
-    // let i = 0
-    // function switchBackground() {
-    //     i++
-    //     setTimeout(() => {
-    //     if(i+2 >= arrBgi.length-1)
-    //     {
-    //         i = 0;
-    //     }
-    //     img.style.opacity = 0;
-    //     img.src = arrBgi[i+1].url
-    //     console.log(i)
-    //     console.log(arrBgi[i+1].url)
-    //     newspic.style.backgroundImage = arrBgi2[i+2].url
-    //     }, 500);
-    //     setTimeout(() => {
-    //         i++
-    //     }, 5000);
-    //     setTimeout(() => {
-    //         if(i+2 >= arrBgi.length-1)
-    //         {
-    //             i = 0;
-    //         }
-    //         img.style.opacity = 1;
-    //         img.src = arrBgi[i+1].url
-    //         newspic.style.backgroundImage = arrBgi2[i+2].url
-    //         }, 500);
-    // }
-    // setInterval(switchBackground,5000)
-    // //以上代码有bug
+//轮播图
+const newspic = document.querySelector('.news-list')
+const pre = document.querySelector('.newspic_pre')
+const next = document.querySelector('.newspic_next')
+const circles = document.querySelectorAll('.circles')
+let index = 0
+let lock = true
+function clickNext()
+{
+    if(!lock) return;
+    index++
+    newspic.style.left = `-${index*100}%`
+    newspic.style.transition = 'all 0.8s ease'
+    if(index === 5) 
+    {
+        index = 0
+        setTimeout(() => {
+            newspic.style.left = 0
+            newspic.style.transition = 'none'
+        },800)
+    }
+    setCircle()
+    lock = false
+    setTimeout(() => {
+        lock = true
+    }, 800);
+}
+next.addEventListener('click',clickNext)
+pre.addEventListener('click',function(){
+    if(!lock) return;
+    index--;
+    if(index === -1)
+    {
+        newspic.style.left = `-${5*100}%`
+        newspic.style.transition = 'none'
+        index = 4
+        setTimeout(() => {
+            newspic.style.left = `-${index*100}%`
+            newspic.style.transition = 'all 0.8s ease'
+        },0)
+    }
+    else
+    {
+        newspic.style.left = `-${index*100}%`
+    }
+    setCircle()
+    lock = false
+    setTimeout(() => {
+        lock = true
+    }, 800);
+})
+function setCircle()
+{
+    for(let i = 0;i<circles.length;i++)
+    {
+        if(i === index)
+        {
+            circles[i].classList.add("actives")
+        }
+        else
+        {
+            circles[i].classList.remove("actives")
+        }
+    }
+}
+const oCircle = document.querySelector('.circle-list')
+oCircle.addEventListener('click',(e) => {
+    if(e.target.nodeName.toLowerCase() === "li")
+    {
+        const n = Number(e.target.getAttribute("data-n"))
+        index = n
+        newspic.style.left = `-${index*100}%`
+    }
+    setCircle()
+})
+//自动轮播
+let autoplay = setInterval(clickNext, 5000);
+//暂停轮播
+const newspicList = document.querySelector('.newspic')
+newspicList.addEventListener('mouseenter',() => {
+    clearInterval(autoplay)
+})
+//继续轮播
+newspicList.addEventListener('mouseleave',() => {
+    clearInterval(autoplay)
+    autoplay = setInterval(clickNext, 5000);
+})
